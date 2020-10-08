@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+body{
+    background:#f1196c;
+    letter-spacing: 1px;
+}
+/*css reutilizaveis para outras paginas*/
+h1.centralizado{
+    padding: 10px 0 20px 0;
+    text-align: center;
+    font-family:"Russo One", sans-serif;
+}
+
+P{
+    text-align: left;
+    padding:10px;    
+}
+p.black{
+    color: black;
+}
+
+/*estrutura do menu*/
+#menu_fixo{
+    width: 100%;
+    height: 50px;
+    top:0;
+    padding: 12px;
+    position: sticky;
+    background: rgb(17, 17, 17);
+    text-align: center;
+    
+}
+
+#menu_fixo a{
+    color:rgb(245, 237, 237);
+    text-decoration: none;
+    font-family: "Russo One", sans-serif;
+}
+
+#menu_fixo a:hover{
+    text-decoration: underline;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin:0 30px;
+    padding-right:40px; 
+}
+/*botao de voltar ao topo*/
+
+.scrollTop{
+position: fixed;
+bottom: 800px;
+right: 40px;
+width: 60px;
+height: 60px;
+background:#f1196c url(/img/up-arrow.svg);
+border-radius: 50%;
+background-size: 40px;
+background-position:center;
+background-repeat:no-repeat;
+cursor: pointer;
+z-index: 1;
+visibility: hidden;
+opacity: 0;
+transition: 0.5s;
+box-shadow: 6px 6px;
+}
+.scrollTop.active{
+    bottom: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*conteudo*/
+#contender{
+   padding:40px 50px;
+    border-radius: 10px;
+    margin:10px auto 10px auto;
+    width:1100px;
+    height:1000px;
+    background: rgb(245, 245, 245);
+}
+#contender p{
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+}
+/*grid da pagina*/
+.grid {
+    display: grid;
+}
+
+.grid-template-columns {
+    grid-template-columns: 330px 330px 330px;
+}
+/*itens do meio do conteudo*/
+
+.block{
+    box-shadow: 6px 6px;
+    border-radius: 10px;
+    padding:10px 30px;
+    margin:10px 30px;
+	background: rgb(216, 213, 213);
+	text-align: left;
+	font-size: 1.5em;
+}
+
+.block:hover{
+    box-shadow: 10px 10px;
+    border-radius: 10px;
+    padding:10px 30px;
+    margin:10px 30px;
+	background: rgb(216, 213, 213);;
+	text-align: left;
+	font-size: 1.5em;
+}
+section.font-block{
+    font-family:'Inter', sans-serif;
+    font-size: 12px;
+}
+/*roda pé*/
+
+#rodape{
+    position: relative;
+    width:100%;
+    height:230px;
+    margin: 0 auto 0 auto;
+    color:rgb(245, 237, 237);
+    background:rgb(17, 17, 17);
+    border-radius: 10px 10px 0 0;
+    font-family: "Russo One", sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    padding:10px 0 20px 0;
+    text-align: center;
+}
+#rodape ul li{
+    display: inline-block;
+    margin:0 30px;
+    padding-top: 20px;
+    padding-right:40px;  
+}
+#rodape h2{
+    text-align: center;
+    padding-right: 40px;
+}
+#rodape img{
+    border-radius: 50%;
+    width: 70px;
+   
+}
+
+#rodape p{
+    text-align:left;
+    padding-top:40px ;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+}
+
+/*formulario da pagina contato*/
+#formulario label{
+    display: block;
+    font-family:"Russo One", sans-serif;
+}
+#formulario input{
+    display: block;
+    margin-bottom: 15px;
+    padding: 5px 2%;
+    width: 500px;
+}
+#formulario textarea{
+    margin-bottom: 15px;
+    width: 500px;
+    height: 150px
+}
+input.botao{
+font-size: 20px;
+font-family:"Russo One", sans-serif;
+background: black;
+color:rgb(245, 237, 237);
+
+}
+input.botao:hover{
+    background: #f1196c;
+    color:black;
+    
+}
+.informações{
+    margin:30px 50px 50px 70px;
+}
+.imagem-mapa, .imagem-mapa img{
+    margin:30px 0px 50px 30px;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+.imagem-mapa ul li{
+    font-family: "Russo One", arial;
+    list-style-position: inside;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+.grid-form{
+    grid-template-columns: 400px 450px;
+}
+
+    
+/* Grig da pagina o mais padrao é o dde 960px 
+
+.linha{
+    width: 1100px;
+    margin: 0px auto;
+    overflow: auto;
+    padding:5px 0;
+}
+
+.coluna{
+    padding:0 10px;
+    float: left;
+}
+
+.col1{
+    width: 60px;
+}
+.col2{
+    width: 140px;
+}
+.col3{
+    width: 220px;
+}
+.col4{
+    width: 300px;
+}
+.col5{
+    width: 380px;
+}
+.col6{
+    width: 460px;
+}
+.col7{
+    width: 540px;
+}
+.col8{
+    width: 620px;
+}
+.col9{
+    width:700px
+}
+.col10{
+    width: 780px;
+}
+.col11{
+    width: 860px;
+}
+.col12{
+    width: 940px;
+}
+*/
+
